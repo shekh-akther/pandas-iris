@@ -1,25 +1,25 @@
 companies:
   type: pandas.CSVDataset
-  filepath: data/01_raw/companies.csv
+  filepath: dbfs:/Volumes/projects/integral_portfolio_model/pandas-iris/data/01_raw/companies.csv
 
 reviews:
   type: pandas.CSVDataset
-  filepath: data/01_raw/reviews.csv
+  filepath: dbfs:/Volumes/projects/integral_portfolio_model/pandas-iris/data/01_raw/reviews.csv
 
 shuttles:
   type: pandas.ExcelDataset
-  filepath: data/01_raw/shuttles.xlsx
+  filepath: dbfs:/Volumes/projects/integral_portfolio_model/pandas-iris/data/01_raw/shuttles.xlsx
   load_args:
     engine: openpyxl
 
 preprocessed_companies:
   type: pandas.ParquetDataset
-  filepath: data/02_intermediate/preprocessed_companies.pq
+  filepath: dbfs:/Volumes/projects/integral_portfolio_model/pandas-iris/data/02_intermediate/preprocessed_companies.pq
 
 preprocessed_shuttles:
   type: pandas.ParquetDataset
-  filepath: data/02_intermediate/preprocessed_shuttles.pq
+  filepath: dbfs:/Volumes/projects/integral_portfolio_model/pandas-iris/data/02_intermediate/preprocessed_shuttles.pq
 
 model_input_table:
   type: pandas.ParquetDataset
-  filepath: data/03_primary/model_input_table.pq
+  filepath: dbfs:/Volumes/projects/integral_portfolio_model/pandas-iris/data/03_primary/model_input_table.pq
